@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration | WE School</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="hero">
+      <h1>Registration</h1>
+      <p>Create your WE School account.</p>
+    </div>
+    <nav class="navbar" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a
+        href="blog.html">Blog</a><a href="booking.html">Booking</a><a href="contact.html">Contact</a><a
+        href="login.html">Login</a><a href="registration.html" class="active" aria-current="page">Register</a></nav>
+  </header>
+  <main>
+    <form class="panel" style="margin:0 auto" action="#" method="post">
+      <h2>Register</h2>
+      <div class="form-grid">
+        <label for="ru">Username</label><input type="text" id="ru" name="username" required>
+        <label for="re">Email</label><input type="email" id="re" name="email" required>
+        <label for="rp">Password</label><input type="password" id="rp" name="password" minlength="8" required>
+        <label for="rc">Confirm password</label><input type="password" id="rc" name="confirm" minlength="8" required>
+        <div class="inline full"><input type="checkbox" id="terms" name="terms" required><label for="terms">I agree to
+            the terms and conditions</label></div>
+        <button type="submit" class="btn full">Create account</button>
+      </div>
+      <p style="margin-top:1rem">Already registered? <a href="login.html">Login</a></p>
+    </form>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="YouTube">&#9654;</a>
+    </div>
+    <p>&copy; 2026 WE School for Applied Technology. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

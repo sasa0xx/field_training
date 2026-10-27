@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking | WE School</title>
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="hero">
+      <h1>Booking</h1>
+      <p>Reserve a campus visit or workshop seat.</p>
+    </div>
+    <nav class="navbar" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a
+        href="blog.html">Blog</a><a href="booking.html" class="active" aria-current="page">Booking</a><a
+        href="contact.html">Contact</a><a href="login.html">Login</a><a href="registration.html">Register</a></nav>
+  </header>
+  <main>
+    <form class="panel" style="max-width:none" action="#" method="post" enctype="multipart/form-data">
+      <h2>Booking Form</h2>
+      <div class="booking-grid">
+        <div class="field"><label for="bn">Full name</label><input type="text" id="bn" name="name" required></div>
+        <div class="field"><label for="be">Email</label><input type="email" id="be" name="email" required></div>
+        <div class="field"><label for="bg">Number of guests</label><input type="number" id="bg" name="guests" min="1"
+            max="20" value="1"></div>
+        <div class="field"><label for="bd">Date</label><input type="date" id="bd" name="date" required></div>
+        <div class="field"><label for="bs">Service</label><select id="bs" name="service">
+            <option>Campus tour</option>
+            <option>Coding workshop</option>
+            <option>Career session</option>
+          </select></div>
+        <div class="field"><label for="bf">Attach file</label><input type="file" id="bf" name="file"></div>
+        <fieldset class="field full" style="border:0">
+          <legend>Preferred time</legend>
+          <div class="radio-row">
+            <label class="inline"><input type="radio" name="time" value="morning" checked> Morning</label>
+            <label class="inline"><input type="radio" name="time" value="afternoon"> Afternoon</label>
+          </div>
+        </fieldset>
+        <div class="field full"><label for="bm">Notes</label><textarea id="bm" name="notes" rows="4"></textarea></div>
+        <div class="inline full"><input type="checkbox" id="bc" name="confirm" required><label for="bc">I confirm the
+            details are correct</label></div>
+        <div class="full"><button type="submit" class="btn">Book now</button></div>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div class="social">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="X">X</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="YouTube">&#9654;</a>
+    </div>
+    <p>&copy; 2026 WE School for Applied Technology. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
